@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body> 
+        <div class="digitalClock">
+            <div class="time">
+                <div> <span id="hour">00</span>H</div>
+                <div> <span id="min">00</span>M</div>
+                <div> <span id="sec">00</span>S</div>
+            </div>
+            <script>
+                function digitalClock () {
+                    document.getElementById('hour').innerHTML = new Date().getHours();
+                    document.getElementById('min').innerHTML = new Date ().getMinutes();
+                    document.getElementById('sec').innerHTML = new Date().getSeconds();
+                }
+                var interval = setInterval(digitalClock);
+            </script>
+    </body>
+</html>
